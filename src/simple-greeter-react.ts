@@ -1,17 +1,15 @@
 /**
- * @license
- * Copyright 2022 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
+ * @file simple-greeter-react.ts
  */
 
 'use client';
 
+import { createComponent } from '@lit/react';
 import React from 'react';
-import {createComponent} from '@lit/react';
-import {SimpleGreeter} from './simple-greeter';
+import { SimpleGreeter } from './simple-greeter';
 
 export default createComponent({
-  react: React,
-  tagName: 'simple-greeter',
-  elementClass: SimpleGreeter,
+    react: React,
+    tagName: 'simple-greeter',
+    elementClass: SimpleGreeter,
 });

@@ -1,17 +1,17 @@
 /**
- * @license
- * Copyright 2023 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
+ * @file count-display.ts
  */
 
-import {LitElement, html} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+// Vendors
+import { LitElement, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('count-display')
 export class CountDisplay extends LitElement {
-  @property({type: Number})
-  count = 0;
-  render() {
-    return html`<p>Count: ${this.count}</p>`;
-  }
+    @property({ type: Number })
+    count = 0;
+
+    render() {
+        return html`<p>Count: ${this.count}</p>`;
+    }
 }
